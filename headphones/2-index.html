@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="2-styles.css">
+    <link rel="stylesheet" href="/holberton_school-icon/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav">
+        <img src="/images/logo_headphones.png" class="logo" alt="logo">
+
+        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+
+        <div class="nav-links">
+            <a href="#">What We Do</a>
+            <a href="#">Our Results</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+            <p class="hero-subtitle">
+                Lorem ipsum dolor set amet lorem ipsum dolor set
+            </p>
+
+            <button class="cta-btn">
+                CALL TO ACTION
+            </button>
+
+            <p class="hero-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </section>
+    <section class="section section-what-we-do" id="what-we-do">
+  <div class="section-inner">
+      <h2 class="section-title">What we do...</h2>
+      <p class="section-description">
+        We design immersive audio experiences that combine crystal-clear sound,
+        modern design and powerful performance. Our teams work across research,
+        design and engineering to deliver headphones that feel as good as they sound.
+      </p>
+    <div class="services-grid">
+      <!-- Service card 1 -->
+      <article class="service-card">
+        <span class="service-icon holberton_school-icon-ic_sound"></span>
+        <h3 class="service-title">Audio engineering</h3>
+        <p class="service-text">
+          We fine-tune every frequency to deliver deep bass, detailed mids
+          and crisp highs for any listening environment.
+        </p>
+      </article>
+
+      <!-- Service card 2 -->
+      <article class="service-card">
+        <span class="service-icon holberton_school-icon-ic_music"></span>
+        <h3 class="service-title">Music experience</h3>
+        <p class="service-text">
+          From studio sessions to playlists, our products make music feel
+          closer, richer and more immersive.
+        </p>
+      </article>
+
+      <!-- Service card 3 -->
+      <article class="service-card">
+        <span class="service-icon holberton_school-icon-ic_video"></span>
+        <h3 class="service-title">Media & content</h3>
+        <p class="service-text">
+          Optimized for movies, podcasts and games with spatial awareness
+          and low-latency performance.
+        </p>
+      </article>
+
+      <!-- Service card 4 -->
+      <article class="service-card">
+        <span class="service-icon holberton_school-icon-ic_hearing"></span>
+        <h3 class="service-title">Comfort & ergonomics</h3>
+        <p class="service-text">
+          Lightweight materials and ergonomic design for all-day comfort,
+          without sacrificing sound isolation.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<script>
+    // Mobile menu toggle
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("open");
+    });
+</script>
+
+</body>
+</html>

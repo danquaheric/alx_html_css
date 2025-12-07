@@ -1,0 +1,335 @@
+:root {
+  --bg-dark: #001d2d;
+  --text-light: #ffffff;
+  --accent-hover: #FF6565;
+  --white: #ffffff;
+}
+
+/* Global*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: var(--text-light);
+}
+
+header {
+  background-image: url('/images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-what-we-do {
+  background-color: #ffffff;   /* white section background */
+  color: #000000;              /* default text color inside */
+}
+
+/* Make sure all text in this section is dark */
+.section-what-we-do .section-title,
+.section-what-we-do .section-description,
+.section-what-we-do .service-title,
+.section-what-we-do .service-text {
+  color: #000000;
+}
+
+.hero {
+  background-image: url('/images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;   /* vertically center content */
+  text-align: center;
+}
+
+/* Generic section wrapper */
+.section {
+  padding: 60px 20px;
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section header */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+
+}
+
+
+.section-description {
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Services grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Service card component (generic, can reuse later) */
+.service-card {
+  text-align: center;
+  padding: 20px;
+}
+
+.service-icon {
+  display: inline-block;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  background-color: rosybrown;
+}
+
+.service-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.service-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+
+.page-hero {
+  background: radial-gradient(circle at center, #1b2735 0, #020b1b 60%);
+  padding: 120px 0 60px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.page-hero p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 32px;
+  opacity: 0.9;
+}
+
+/* CARD GRID */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-author {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* NAVIGATION */
+.nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-hover);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url('/images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  align-items: center;           /* vertically center content */
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+
+/* Button with border radius (and your hover opacity behavior) */
+.cta-btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 30px;           /* rounded corners */
+  background: #FF6565;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  opacity: 0.9;
+}
+
+.hero-text {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 480px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 130px;
+  }
+
+  .hero {
+    height: 500px;
+  }
+}
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 40px 16px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 16px 10px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
